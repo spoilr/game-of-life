@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+</head>
+
+
+
+<body>
+
+<div class="container">
+    <h1> Conway's Game of Life </h1>
+
+  <div id="menu">
+    <ul>
+      <li><a href="life.html">Home</a></li>
+      <li><a href="rules.html">Rules</a></li>
+      <li><a href="game.html">Game patterns</a></li>
+      <li id="active"><a href="gamedesign.html">Game design</a>
+	<ul>
+	  <li><a href="patterns.html">Patterns</a></li>
+	</ul>
+      </li>
+    </ul>
+  </div>
+
+
+<br><br><br><br><br>
+
+<div class="paragraph">
+
+  <p> Game of life uses a Java applet that has a Swing-based  graphical user interface (GUI). </p>
+
+  <p> <b>Board</b> is an abstract class and has the basic implementation of game's grid: it has methods like setting and getting the colour of a specific cell, reseting the board or running one step. </p>
+  <p> <b>Grid</b> is a class that extends Board and implements the grid as an edgeless 30x30 collection of cells. </p>
+  <p> <b>Cell</b> is a class that extends JButton in order to keep track of its coordinates. </p>
+  <p> <b>Future cell</b> is a class that creates the cell after one step keeping track of number of live neighbours and the majority colour of them. This class was created in order to avoid duplicated code that would have appeared from separately calculating the number of live neighbours and their colour. </p>
+  <p> <b>Controllers</b> is a class that handles the 4 types of controllers needed in the game : </p>
+  
+    <ul> 
+      <li> <b>ControlListener</b>(ActionListener) used for the control buttons </li>  <br>
+      <li> <b>CellListener</b>(MouseAdapter) used for the cells.</li> <br>
+      <li> <b>ChangeValue</b>(ChangeListener) used for the slider. </li> <br>
+      <li> <b>BoxListener</b>(ActionListener) used for the combobox. </li> <br>
+    </ul>
+  <p> <b>View</b> is an interface that handles basic requirements of the display : update, disable and unable buttons.</p>
+  <p> <b>Display</b> is class that implements View, creating the display of GUI elements. </p>
+  <p> <b>Model</b> is a class that encapsulates the state representation and the methods for modifying it : kill, resurrect. </p>
+  <p> <b>Patterns</b> is a  class that creates common patterns which are then used in selecting their specific representation from the combobox. </p>
+  <p> <b>RandomGrid</b> is a class that creates cells with random colours. </p>
+  <p> <b>Life</b> is a class that extends JApplet. It is used to initialize the applet. </p>
+  <p> <b>Wrapper</b> is a class used in Life for changing from a normal grid to an edgeless one. </p>
+
+
+  <p> As part of the extension, there is one extra counter (alive) that keeps track of the number of live cells (coloured in red or green) that are currently on the board. This updates accordingly after each step in the game. </p>
+  <p> You can select to see some common patterns and some intersting ones : </p>
+ 
+  <ul>
+    <li> Still  : block, beehive, loaf, boat, tub, barge </li>
+    <li> Oscillators : blinker, toad, beacon, pulsar, spaceship, bottle, washing machine, bent keys </li>
+    <li> Bloom </li>
+    <li> Pentadecathlon </li>
+    <li> SoonPulsar </li>
+    <li> PufTrain </li>
+  </ul>
+
+  <p> Every time you select a pattern that has been implemented, you can run it to see its evolution. You can also add other cells (making them alive) and run the new pattern in order to obtain a new generation of cells.</p>
+
+<br><br><br>
+  <p> You can read more about the patterns used when designing the game by accesing the following link: </p>
+
+  <ul> 
+    <li> <a href="patterns.html">Patterns</a> </li>
+  </ul>
+
+
+<br><br><br><br>
+
+<div class = "end">
+  <a href="http://www3.imperial.ac.uk/" target="_blank">Imperial College London</a> |
+  <a href="http://www3.imperial.ac.uk/computing" target="_blank">DoC</a> |
+  <a href="references.html">References</a>
+  <br> <br>
+</div>
+
+</div>
+
+    
+
+</body>
+
+
+</html>

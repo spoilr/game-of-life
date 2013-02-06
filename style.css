@@ -1,0 +1,45 @@
+body {background-image:url('gol.gif');font-family:arial, sans-serif; }
+h1 {font-family:courier, sans-serif;font-size:40px;text-align:center;color:#17365D;}
+h2 {font-family:courier, sans-serif;text-align:center;font-size:30px;color:#4F81BD; margin-bottom:50px; }
+h3 {font-family:courier, sans-serif;text-align:left;font-size:22px;margin:15px;}
+p {font-size:1em; text-align:justify; }
+
+.container {margin:50px auto; -moz-box-shadow: 0 0 5px 5px #888; -webkit-box-shadow: 0 0 5px 5px#888; box-shadow: 0 0 5px 5px #888; background-color:#F0F0F0 ; overflow: auto; width:90%; min-width:90%;}
+
+.content {float:right; height:auto; width:980px; min-width:980px; margin:0 20px; background-color:#ffffff; overflow:auto;}
+
+
+.rules {padding-left:50px; text-align:center;}
+
+.applet {height:auto; float:left; margin:0 20px;}
+
+.rest {float:right}
+
+.paragraph {margin-right:50px; margin-left:50px;}
+
+#parag {margin-right:50px; margin-left:50px;}
+
+#imageExp {text-align:center;}
+
+.allstillimages {float:left; width:600px; min-width:600px; margin:20px;}
+
+.imageStill {float:left;width:100px; }
+
+.alloscimages {float:left;width:700px; min-width:700px; margin:20px;}
+
+.imageOsc {float:left; width:300px;}
+
+.imageGlider {float:left; width:600px; min-width:600px; margin-bottom:50px;}
+
+
+#menu{width:630px; margin: 0px auto; list-style:none; background-color:#ffffff;float:none;}
+#menu ul{padding:0;margin:0px auto; font-family:Arial, Helvetica, sans-serif; color:#FFF; font-size:16px;float:left; list-style: none;}
+#menu li{position: relative;float: left;background:#3f3f3f; line-height:32px;} 
+#menu ul li a{width:150px;height: 32px;display: block;text-decoration:none;text-align: center;line-height: 32px;color:#FFF;} 
+#menu ul li a:hover {background:#d40203;}
+#menu ul li#active{background:#d40203;}
+#menu ul ul{position: absolute;top: auto; display:none; padding: 1em;margin:-1em 0 0 -1em;} 
+#menu ul li:hover ul{display:block;} 
+
+.end {text-align:center;}
+
